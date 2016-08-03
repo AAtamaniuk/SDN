@@ -1,6 +1,18 @@
+@import "../variables.scss";
+
 html {
   box-sizing: border-box;
 }
 *, *:before, *:after {
   box-sizing: inherit;
+}
+body {
+  display: block;
+  background-color: darkgrey;
+}
+
+.body-wrap {
+  width: 320px;
+  //margin: 0 auto;
+  background-color: $white;   
 }

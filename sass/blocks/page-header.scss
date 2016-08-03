@@ -34,7 +34,7 @@
     display: block;
     height: 100%;
     
-    @include white-title;    
+    @include white-main;    
     text-decoration: none;
     line-height: 55px;    
   }
@@ -56,7 +56,9 @@
   display: block;  
   width: 138px;
   height: 70px;
-  margin: auto;  
+  margin: auto;
+  margin-bottom: -14px;
+  z-index: 10;
     
   background-image: url("../img/form-logo-triangle.svg");
   

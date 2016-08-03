@@ -1,0 +1,67 @@
+.intro-svg {
+  height: 390px;
+  
+  background-image: url("../../img/photo-background@1x.jpg");
+  padding-top: 48px;
+  
+  .intro-svg__welcome {
+    display: block;    
+    width: 188px;
+    height: 35px;
+    margin: auto;
+    margin-bottom: 11px;
+  }
+  
+  
+  .intro-svg__tothegorgeous {
+    display: block;
+    width: 196px;
+    height: 22px;
+    margin: auto;
+    margin-bottom: 60px;
+  }
+  
+  
+  .intro-svg__sedona {
+    display: block;
+    width: 280px;
+    height: 48px;
+    margin: auto;
+    margin-bottom: 67px;
+  }
+  
+  
+  .intro-svg__becausecanyon {
+    display: block;
+    width: 197px;
+    height: 54px;
+    margin: auto;
+  }
+  
+  
+}
+
+.intro-txt{
+  padding: 25px 10%;
+  
+  .intro-txt__main{
+    margin-bottom: 30px;
+    @include black-main;
+    line-height: 25px;
+  }
+
+  
+  .intro-txt__sub{
+    @include black-sub;
+    line-height: 26px;
+  }
+}
+
+
+
+
+
+
+
+
+
