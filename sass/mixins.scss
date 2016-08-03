@@ -1,23 +1,15 @@
-@mixin white-main{
-  text-align: center;
-  color: $white;
+@import "variables.scss";
+
+@mixin main{
+  text-align: center;  
   font-family: $font-family;
   font-size: $font-size-main;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-@mixin black-main{
-  text-align: center;
-  color: $black;
-  font-family: $font-family;
-  font-size: $font-size-main;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-@mixin black-sub{
-  text-align: center;
-  color: $black;
+@mixin sub{
+  text-align: center;  
   font-family: $font-family;
   font-size: $font-size-sub;
   font-weight: 400;

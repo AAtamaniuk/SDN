@@ -1,0 +1,15 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.reason {
+  
+  .reason__title{
+    @include main;
+  }
+  .reason__num{
+    @include sub;
+  }
+  .reason__about{
+    @include sub;
+  }
+}

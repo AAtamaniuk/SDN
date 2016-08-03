@@ -1,3 +1,7 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+
 .intro-svg {
   height: 390px;
   
@@ -46,13 +50,13 @@
   
   .intro-txt__main{
     margin-bottom: 30px;
-    @include black-main;
+    @include main;
     line-height: 25px;
   }
 
   
   .intro-txt__sub{
-    @include black-sub;
+    @include sub;
     line-height: 26px;
   }
 }

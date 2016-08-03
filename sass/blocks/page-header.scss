@@ -34,7 +34,8 @@
     display: block;
     height: 100%;
     
-    @include white-main;    
+    @include main;
+    color: $white;
     text-decoration: none;
     line-height: 55px;    
   }
