@@ -5,15 +5,16 @@
 .intro-svg {
   height: 390px;
   
+  background-color: brown;
   background-image: url("../../img/photo-background@1x.jpg");
   padding-top: 48px;
   
   .intro-svg__welcome {
     display: block;    
     width: 188px;
-    height: 35px;
+    height: 34px;
     margin: auto;
-    margin-bottom: 11px;
+    margin-bottom: 10px;
   }
   
   
@@ -46,12 +47,16 @@
 }
 
 .intro-txt{
-  padding: 25px 10%;
+  padding: 0 10%;
+  padding-top: 40px;
+  padding-bottom: 10px;
   
   .intro-txt__main{
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 27px;
     @include main;
-    line-height: 25px;
+    
+    line-height: 26px;
   }
 
   

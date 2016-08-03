@@ -1,0 +1,26 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.reason-feature {
+  padding-left: 70px;
+  padding-right: 40px;
+  padding-top: 22px;  
+  margin: 0;
+  
+  
+  .reason-feature__title {
+    @include main;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+  
+  
+  .reason-feature__txt {
+    @include sub;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 2em;
+  }
+}
