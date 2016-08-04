@@ -29,3 +29,60 @@
   background-color: $blue;
   line-height: 21px;
 }
+
+
+.reason--2 {
+  padding-top: 30px;
+  padding-bottom: 41px;
+  background-color: $blue;
+  line-height: 21px;
+}
+
+.reason--grey {
+  position: relative;
+  
+  padding-top: 16px;
+  padding-bottom: 28px;
+  
+  line-height: 21px;
+  
+  background-color: $grey;
+  
+  
+  &::after {
+  content: "";
+
+  position: absolute;
+  bottom: 0;
+  left: 6%;
+  right: 6%;
+
+  height: 1px;
+
+  background-color: rgba(0,0,0,0.1);
+  }
+}
+
+
+.reason--5 {
+  &::after {
+    display: none;
+  }
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

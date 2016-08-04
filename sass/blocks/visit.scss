@@ -1,0 +1,12 @@
+.visit {} 
+
+
+.visit__ask {
+  @include main;
+}
+
+
+.visit__invite {
+  @include sub;
+}
+       
