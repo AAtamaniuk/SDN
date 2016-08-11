@@ -145,21 +145,21 @@
       <div class="hotel">
         <h1 class="hotel__title">Поиск гостиницы в Седоне</h1>
         <form name="hotel" class="hotel__form">
-          <label class="form__label" for="form__field--date-in">Дата заезда:
-          <input type="date" class="form__field  form__field--full-width" id="form__field--date-in"  min="2016-01-01" max="2017-01-01"></label>
+          
+          <label class="form__label" for="form__field--arrival">Дата заезда:
+          <input type="date" class="form__field" id="form__field--arrival"  min="2016-01-01" max="2017-01-01"></label>
 
-          <label class="form__label" for="form__field--date-out">Дата выезда:
-          <input type="date" class="form__field  form__field--full-width" id="form__field--date-out" min="2016-01-01" max="2017-01-01"></label>
+          <label class="form__label" for="form__field--departure">Дата выезда:
+          <input type="date" class="form__field" id="form__field--departure" min="2016-01-01" max="2017-01-01"></label>
 
-          <label class="form__label  form__label--half-width" for="form__field--num-adult">Взрослые:
-          <input type="number" class="form__field  form__field--half-width" id="form__field--num-adult" min="1" max="20"></label>
+          <label class="form__label" for="form__field--num-adult">Взрослые:
+          <input type="number" class="form__field" id="form__field--num-adult" min="1" max="20"></label>
 
-          <label class="form__label  form__label--half-width  form__label--kid" for="form__field--num-kid">Дети:
+          <label class="form__label" for="form__field--num-kid">Дети:
           <input type="number" class="form__field   form__field--half-width" id="form__field--num-kid" min="0" max="20"></label>
 
           <button onclick="sendHotelData()" class="form__submit-btn">Найти</button>
-        </form>
-        <button type="button" class="hotel__close">close</button>
+        </form>        
       </div>
 
     </div>

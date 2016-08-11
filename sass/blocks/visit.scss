@@ -1,12 +1,22 @@
-.visit {} 
+@import "../variables.scss";
+@import "../mixins.scss";
 
+.visit { 
+  padding-top: 33px;
+  padding-bottom: 33px;
+  padding-left: 9%;
+  padding-right: 9%;
 
-.visit__ask {
+  &__ask {
+  margin: 0;
+  
+  
   @include main;
+  font-size: 21px;
 }
 
 
-.visit__invite {
+  &__invite {
   @include sub;
 }
-       
+}

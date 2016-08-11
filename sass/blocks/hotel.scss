@@ -1,0 +1,35 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.hotel {
+  &__title {
+    display: block;
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+    
+    @include main;
+    color: $white;
+    
+    background-color: $brown;    
+  }
+}
+
+
+.form__label {
+  display: inline-block;
+  
+  
+  @include sub;
+  font-weight: 700;
+}
+
+.form__field {
+  display: inline-block;
+  width: 280px;
+  
+  border: none;
+  background-color: $grey;  
+}
