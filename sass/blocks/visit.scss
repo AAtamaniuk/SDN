@@ -2,13 +2,14 @@
 @import "../mixins.scss";
 
 .visit { 
-  padding-top: 33px;
-  padding-bottom: 33px;
+  padding-top: 25px;
+  padding-bottom: 15px;
   padding-left: 9%;
   padding-right: 9%;
 
   &__ask {
   margin: 0;
+  margin-bottom: 20px;
   
   
   @include main;
@@ -17,6 +18,9 @@
 
 
   &__invite {
+  margin: 0;
+    
   @include sub;
+  line-height: 24px;
 }
 }
