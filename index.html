@@ -147,18 +147,18 @@
         <form name="hotel" class="hotel__form">
           
           <label class="form__label" for="form__field--arrival">Дата заезда:
-          <input type="date" class="form__field" id="form__field--arrival"  min="2016-01-01" max="2017-01-01"></label>
+          <input type="date" class="form__field" id="form__field--arrival"  value="2016-01-01" min="2016-01-01" max="2017-01-01"></label>
 
           <label class="form__label" for="form__field--departure">Дата выезда:
-          <input type="date" class="form__field" id="form__field--departure" min="2016-01-01" max="2017-01-01"></label>
+          <input type="date" class="form__field" id="form__field--departure" value="2016-01-01" min="2016-01-01" max="2017-01-01"></label>
 
-          <label class="form__label" for="form__field--num-adult">Взрослые:
-          <input type="number" class="form__field" id="form__field--num-adult" min="1" max="20"></label>
+          <label class="form__label  form__label--half" for="form__field--num-adult">Взрослые:
+          <input type="number" class="form__field" id="form__field--num-adult" value="2" min="1" max="20"></label>
 
-          <label class="form__label" for="form__field--num-kid">Дети:
-          <input type="number" class="form__field   form__field--half-width" id="form__field--num-kid" min="0" max="20"></label>
+          <label class="form__label  form__label--half" for="form__field--num-kid">Дети:
+          <input type="number" class="form__field   form__field--half-width" id="form__field--num-kid" value="0" min="0" max="20"></label>
 
-          <button onclick="sendHotelData()" class="form__submit-btn">Найти</button>
+          <button onclick="sendHotelData()" class="btn  form__submit-btn" form="hotel">Найти</button>
         </form>        
       </div>
 
