@@ -52,6 +52,7 @@
   height: 22px;  
   
   background-image: url("../img/icon-cross.svg");
+  background-repeat: no-repeat;
 }
 .main-nav__logo {  
   display: block;  
@@ -62,6 +63,7 @@
   z-index: 10;
     
   background-image: url("../img/form-logo-triangle.svg");
+  background-repeat: no-repeat;
   
   img {
     display: block;

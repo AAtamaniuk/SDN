@@ -1,2 +1,57 @@
 @import "../variables.scss";
 @import "../mixins.scss";
+
+
+.page-footer {  
+  z-index: 30;
+  display: block;  
+  padding-top: 20px;
+  padding-bottom: 30px;  
+  
+  background-color: rgba(255,255,255,0.9);
+}
+
+
+.hash {
+  @include main;
+  font-size: 21px;
+  margin-bottom: 35px;
+  }
+
+
+.social {
+  display: block;  
+  width: 150px;
+  margin: auto;
+  margin-bottom: 50px;
+  
+  font-size: 0;
+  
+  &__item {
+    display: inline-block;
+    vertical-align: top;    
+    width: 46px;
+    height: 48px;
+    margin-right: 6px;
+    
+    background-color: $blue;
+    
+    
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.copyright {
+  @include sub;
+  
+  p {
+    margin: 0;
+    
+    
+    a {
+      font-size: 0;
+    }
+  }
+}

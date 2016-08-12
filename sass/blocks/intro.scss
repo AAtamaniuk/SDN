@@ -5,9 +5,11 @@
 .intro-svg {
   height: 390px;
   
-  background-color: brown;
-  background-image: url("../../img/photo-background@1x.jpg");
+  background-color: brown;  
+  background: url(../../img/photo-background@1x.jpg) 52% 23% no-repeat;
+  //background-size: cover;
   padding-top: 48px;
+  
   
   .intro-svg__welcome {
     display: block;    
