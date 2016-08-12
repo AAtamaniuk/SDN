@@ -1,0 +1,13 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.btn {
+  display: block;  
+  
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  
+  text-transform: uppercase;
+}
