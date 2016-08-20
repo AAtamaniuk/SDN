@@ -7,7 +7,6 @@
   display: block;  
   padding-top: 20px;
   padding-bottom: 30px;  
-  
   background-color: rgba(255,255,255,0.9);
 }
 
@@ -23,24 +22,39 @@
   display: block;  
   width: 150px;
   margin: auto;
-  margin-bottom: 50px;
-  
+  margin-bottom: 50px;  
   font-size: 0;
+  
   
   &__item {
     display: inline-block;
     vertical-align: top;    
     width: 46px;
     height: 48px;
-    margin-right: 6px;
-    
+    margin-right: 6px;    
     background-color: $blue;
+    background-repeat: no-repeat;
+    background-position: center;
     
+    &--fb {
+    background-image: url(../../img/icon-facebook.svg);    
+   }
+    
+    &--tw {
+    background-image: url(../../img/icon-twitter.svg);    
+   }
+    
+    &--you {
+    background-image: url(../../img/icon-youtube.svg);    
+   }
     
     &:last-child {
       margin-right: 0;
-    }
+    }    
   }
+}
+.social__item {
+  
 }
 
 .copyright {

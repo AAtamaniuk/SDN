@@ -1,7 +1,15 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
-.reason-img {
+.reason-img {  
   height: 256px;
   background-color: brown;
+  overflow: hidden;
+  
+  
+  img {
+     display: block;     
+     height: 100%;
+     max-height: 100%;     
+  }
 }
