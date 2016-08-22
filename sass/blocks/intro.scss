@@ -6,22 +6,23 @@
   height: 390px;
   
   background-color: brown;  
-  background: url(../../img/photo-background@1x.jpg) 50% 50% no-repeat;
-  background-size: cover;
+  background: url(../../img/photo-background@1x.jpg) 52% 23% no-repeat;
+  //background-size: cover;
   padding-top: 48px;
   
   
   .intro-svg__welcome {
     display: block;    
+    width: 188px;
     height: 34px;
     margin: auto;
     margin-bottom: 10px;
-    fill: $blue;
   }
   
   
   .intro-svg__tothegorgeous {
-    display: block;    
+    display: block;
+    width: 196px;
     height: 22px;
     margin: auto;
     margin-bottom: 60px;
@@ -29,7 +30,8 @@
   
   
   .intro-svg__sedona {
-    display: block;    
+    display: block;
+    width: 280px;
     height: 48px;
     margin: auto;
     margin-bottom: 67px;
@@ -37,7 +39,8 @@
   
   
   .intro-svg__becausecanyon {
-    display: block;    
+    display: block;
+    width: 197px;
     height: 54px;
     margin: auto;
   }
@@ -45,27 +48,25 @@
   
 }
 
-.intro-txt {
-  position: relative;  
+.intro-txt{
   padding: 0 10%;
   padding-top: 40px;
   padding-bottom: 10px;
   
-  
-  .intro-txt__main {
+  .intro-txt__main{
     margin-top: 0;
     margin-bottom: 27px;
-    @include main;    
+    @include main;
+    
     line-height: 26px;
   }
 
   
-  .intro-txt__sub {
+  .intro-txt__sub{
     @include sub;
     line-height: 26px;
   }
 }
-
 
 
 
