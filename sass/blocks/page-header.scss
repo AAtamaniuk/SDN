@@ -5,54 +5,76 @@
   position: relative;
 }
 
-
 .main-nav__list {
   padding: 0;
   margin: 0;
-  list-style: none;  
-}
+  list-style: none;
   
+  @media screen and (min-width: 768px) {
+    //position: absolute;    
+  }
+}  
 
 .main-nav__item {  
-  height: 55px;
   display: block;
   background-color: $blue;
   border-top: 1px solid rgba(255,255,255,0.2);
   border-bottom: 1px solid rgba(1,1,1,0.2);
   
+  @media screen and (min-width: 768px) {
+    background-color: inherit;
+    border-top: none;
+    border-bottom: none;    
+  }
   
   &:first-child {
-    border-top: none;
-  }
+    border-top: $blue;
+    
+    @media screen and (min-width: 768px) {    
+    border-top: none;    
+    }
+  }  
   
   &:last-child {
-    border-bottom: none;
+    border-bottom: $blue;
     box-shadow: inset 0px -4px 7px 0px rgba(0,0,0,0.2);
-  }
-  
-  a {     
-    display: block;
-    height: 100%;
     
+    @media screen and (min-width: 768px) {    
+    border-top: none;
+    box-shadow: none;
+    }
+  }    
+}
+
+.main-nav__item a {
+    display: block;
+    height: 100%;   
+    padding-top: 15px;
+    padding-bottom: 17px;
+    padding-left: 20px;
+    padding-right: 20px;    
     @include main;
     color: $white;
     text-decoration: none;
-    line-height: 55px;    
-  }
-  
+    
+    @media screen and (min-width: 768px) {
+    color: inherit;  
+    }
 }
-
 .burger {
   position: absolute;
   top: 17px;
-  right: 20px;
-  
+  right: 20px;  
   display: block;  
   width: 23px;
   height: 22px;  
-  
   background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
+  
+  @media screen and (min-width: 768px) {
+    display: none;  
+  }  
+  
 }
 .main-nav__logo {  
   display: block;  
@@ -71,4 +93,10 @@
     margin: auto;
   }
 }
+
+
+
+
+
+
 
