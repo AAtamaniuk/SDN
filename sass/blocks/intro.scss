@@ -8,7 +8,7 @@
   //background: url(../../img/photo-background@1x.jpg) 50% 50% no-repeat;
   background-size: cover;
   padding-top: 48px;
-  @media (min-width: 768px) {
+  @media (min-width: $md) {
     height: 512px;
     padding-top: 76px;
   }
@@ -16,41 +16,47 @@
   
   .intro-svg__welcome {
     display: block;    
-    width: 188px;
     height: 34px;
     margin: auto;
     margin-bottom: 10px;
-    @media (min-width: 768px) {
-      height: 43px;
+    @media (min-width: $md) {
+      height: 44px;
+      margin-bottom: 12px;
   }
   }
   
   
   .intro-svg__tothegorgeous {
-    display: block;
-    width: 196px;
+    display: block;    
     height: 22px;
     margin: auto;
     margin-bottom: 60px;
-    @media (min-width: 768px) {            
+    @media (min-width: $md) {
+      height: 30px;
+      margin-bottom: 50px;
     }
   }
   
   
   .intro-svg__sedona {
-    display: block;
-    width: 280px;
+    display: block;    
     height: 48px;
     margin: auto;
-    margin-bottom: 67px;
+    margin-bottom: 67px;    
+    @media (min-width: $md) {
+      height: 78px;
+      margin-bottom: 60px;      
+    }
   }
   
   
   .intro-svg__becausecanyon {
-    display: block;
-    width: 197px;
+    display: block;    
     height: 54px;
     margin: auto;
+    @media (min-width: $md) {
+      height: 78px;
+    }
   }
   
   
@@ -60,19 +66,29 @@
   padding: 0 10%;
   padding-top: 40px;
   padding-bottom: 10px;
+  @media (min-width: $md) {
+      padding-top: 55px;
+      padding-bottom: 35px;
+    }
   
   .intro-txt__main{
     margin-top: 0;
     margin-bottom: 27px;
-    @include main;
-    
+    @include main;    
     line-height: 26px;
+    @media (min-width: $md) {
+      margin-bottom: 29px;
+      font-size: 21px;
+    }
   }
 
   
   .intro-txt__sub{
     @include sub;
     line-height: 26px;
+    @media (min-width: $md) {
+      
+    }
   }
 }
 

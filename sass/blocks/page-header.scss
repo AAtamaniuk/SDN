@@ -8,11 +8,7 @@
 .main-nav__list {
   padding: 0;
   margin: 0;
-  list-style: none;
-  
-  @media screen and (min-width: 768px) {
-    //position: absolute;    
-  }
+  list-style: none;  
 }  
 
 .main-nav__item {  
@@ -21,7 +17,7 @@
   border-top: 1px solid rgba(255,255,255,0.2);
   border-bottom: 1px solid rgba(1,1,1,0.2);
   
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $md) {
     background-color: inherit;
     border-top: none;
     border-bottom: none;    
@@ -30,7 +26,7 @@
   &:first-child {
     border-top: $blue;
     
-    @media screen and (min-width: 768px) {    
+    @media screen and (min-width: $md) {    
     border-top: none;    
     }
   }  
@@ -39,7 +35,7 @@
     border-bottom: $blue;
     box-shadow: inset 0px -4px 7px 0px rgba(0,0,0,0.2);
     
-    @media screen and (min-width: 768px) {    
+    @media screen and (min-width: $md) {    
     border-top: none;
     box-shadow: none;
     }
@@ -57,7 +53,7 @@
     color: $white;
     text-decoration: none;
     
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: $md) {
     color: inherit;  
     }
 }
@@ -71,7 +67,7 @@
   background-image: url("../img/icon-cross.svg");
   background-repeat: no-repeat;
   
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $md) {
     display: none;  
   }  
   
