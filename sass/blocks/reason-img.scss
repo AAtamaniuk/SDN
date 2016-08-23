@@ -4,4 +4,8 @@
 .reason-img {
   height: 256px;
   background-color: brown;
+  @media (min-width: $md) {    
+    min-width: 66.66%;
+    min-height: 256px;
+  }  
 }

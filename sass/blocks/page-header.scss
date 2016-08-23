@@ -8,7 +8,15 @@
 .main-nav__list {
   padding: 0;
   margin: 0;
-  list-style: none;  
+  list-style: none;
+  @media (min-width: $md) {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;    
+    align-items: center;
+  }
 }  
 
 .main-nav__item {  
@@ -17,16 +25,17 @@
   border-top: 1px solid rgba(255,255,255,0.2);
   border-bottom: 1px solid rgba(1,1,1,0.2);
   
-  @media screen and (min-width: $md) {
+  @media (min-width: $md) {
     background-color: inherit;
     border-top: none;
-    border-bottom: none;    
+    border-bottom: none;
+    display: inline-block;
   }
   
   &:first-child {
     border-top: $blue;
     
-    @media screen and (min-width: $md) {    
+    @media (min-width: $md) {    
     border-top: none;    
     }
   }  
@@ -54,7 +63,8 @@
     text-decoration: none;
     
     @media screen and (min-width: $md) {
-    color: inherit;  
+    color: inherit;
+    font-size: 14px;
     }
 }
 .burger {
@@ -78,10 +88,12 @@
   height: 70px;
   margin: auto;
   margin-bottom: -14px;
-  z-index: 10;
-    
+  z-index: 10;    
   background-image: url("../img/form-logo-triangle.svg");
   background-repeat: no-repeat;
+  @media screen and (min-width: $md) {
+    //position: absolute;
+  }
   
   img {
     display: block;

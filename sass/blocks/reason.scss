@@ -1,83 +1,89 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
+.reason-wrap{
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .reason {
   padding-left: 10%;
   padding-right: 10%;
+  overflow-wrap: break-word;
+  hyphens: auto;
+  @media (min-width: $md) {
+    max-width: 33.33%;
+    min-height: 256px;
+    padding-left: 6.5%;
+    padding-right: 6.5%;  
+  }  
   
-  
-  .reason__title{
+  &__title {
     @include main;
-  }
+    @media (min-width: $md) {
+    font-size: 21px;  
+    }  
+  }  
   
-  
-  .reason__num{
+  &__num {
     @include sub;
-  }
+  }  
   
-  
-  .reason__about{
-    @include sub;
+  &__about {
+    @include sub;    
     margin-bottom: 0;
   }
+  
+  &:first-child {
+    padding-top: 45px;
+    @media (min-width: $md) {
+    padding-top: 30px;  
+  }  
+  }  
 }
 
 
-.reason--1 {
-  padding-top: 45px;
-  padding-bottom: 41px;
-  background-color: $blue;
-  line-height: 21px;
-}
-
-
-.reason--2 {
+.reason--blue {
   padding-top: 30px;
   padding-bottom: 41px;
   background-color: $blue;
+  color: $white;
   line-height: 21px;
+  @media (min-width: $md) {    
+    padding-left: 5%;
+    padding-right: 5%;  
+  }
 }
 
 .reason--grey {
-  position: relative;
-  
+  position: relative;  
   padding-top: 16px;
-  padding-bottom: 28px;
-  
-  line-height: 21px;
-  
+  padding-bottom: 28px;  
+  line-height: 21px;  
   background-color: $grey;
+  @media (min-width: $md) {    
+    padding-top: 30px;
+    //padding-bottom: 5%;  
+  }
   
   
   &::after {
   content: "";
-
   position: absolute;
   bottom: 0;
   left: 6.25%;
   right: 6.25%;
-
   height: 1px;
-
   background-color: rgba(0,0,0,0.1);
-  }
-}
-
-
-.reason--5 {
-  &::after {
+  @media (min-width: $md) {
     display: none;
+  }  
   }
   
+  &:last-child::after {
+       display: none;
+  }
 }
-
-
-
-
-
-
-
-
 
 
 
