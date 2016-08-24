@@ -8,11 +8,15 @@
 
 .hotel__title {
   display: block;
-  padding: 32px 6.25%;
+  padding: 30px 6.25%;
   margin: 0;    
   @include main;
+  text-align: center;
   color: $white;    
-  background-color: $brown;    
+  background-color: $brown;
+  @media (min-width: $md) {
+   font-size: 30px;
+  }
 }
 
 .hotel__form {

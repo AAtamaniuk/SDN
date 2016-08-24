@@ -1,0 +1,16 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.row-wrap{}
+
+.row-wrap--reverse{}
+
+.row-wrap--feature {
+  //padding-top: 25px;
+  //padding-bottom: 23px;  
+  @media (min-width: $md) {    
+    display: block;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}

@@ -2,15 +2,15 @@
 @import "../mixins.scss";
 
 .reason-wrap{
-  display: flex;
-  flex-wrap: wrap;
+  //display: flex;
+  //flex-wrap: wrap;
 }
 
 .reason {
   padding-left: 10%;
   padding-right: 10%;
-  overflow-wrap: break-word;
-  hyphens: auto;
+  line-height: 21px;
+  text-align: center;
   @media (min-width: $md) {
     max-width: 33.33%;
     min-height: 256px;
@@ -20,50 +20,59 @@
   
   &__title {
     @include main;
-    @media (min-width: $md) {
-    font-size: 21px;  
-    }  
+    margin-bottom: 10px;
   }  
   
   &__num {
-    @include sub;
-  }  
-  
-  &__about {
+    margin-top: 10px;
     @include sub;    
-    margin-bottom: 0;
-  }
+  }  
   
-  &:first-child {
-    padding-top: 45px;
-    @media (min-width: $md) {
-    padding-top: 30px;  
-  }  
-  }  
+  &__about {       
+    margin-bottom: 0;
+    @include sub;    
+  } 
 }
 
-
 .reason--blue {
+  //padding-top: 45px;
   padding-top: 30px;
-  padding-bottom: 41px;
-  background-color: $blue;
-  color: $white;
-  line-height: 21px;
+  padding-bottom: 40px;
+  color: $white;  
+  background-color: $blue;   
+  
   @media (min-width: $md) {    
     padding-left: 5%;
     padding-right: 5%;  
   }
 }
 
+.reason--feature {
+  @media (max-width: $md) {
+  padding-left: 70px;
+  padding-right: 40px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  text-align: left;  
+    
+    &:first-child{
+      padding-top: 27px;
+    }
+  
+    &:last-child{
+      padding-bottom: 37px;
+    }
+  }
+}
+
 .reason--grey {
   position: relative;  
-  padding-top: 16px;
+  padding-top: 15px;
   padding-bottom: 28px;  
-  line-height: 21px;  
   background-color: $grey;
   @media (min-width: $md) {    
-    padding-top: 30px;
-    //padding-bottom: 5%;  
+    padding-top: 30px;    
   }
   
   
@@ -81,7 +90,7 @@
   }
   
   &:last-child::after {
-       display: none;
+    display: none;
   }
 }
 

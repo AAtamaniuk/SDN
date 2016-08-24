@@ -1,52 +1,24 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
-.reason-feature-wrap {
-  padding-top: 25px;
-  padding-bottom: 23px;
-  font-size: 0;
-  @media (min-width: $md) {    
-    display: block;
-    padding-top: 0;
-    padding-bottom: 0;
-  }
-}
 
 
-.reason-feature {
-  padding-left: 70px;
-  padding-right: 40px;
-  padding-top: 15px;
-  padding-bottom: 15px;
+
+/*.reason-feature__title {    
   margin: 0;
+  margin-bottom: 15px;    
+  @include main;
+  text-align: left;
   @media (min-width: $md) {
-    display: inline-block;
-    vertical-align: top;
-    max-width: 33.33%;
-    min-height: 330px;
-    padding-left: 6.5%;
-    padding-right: 6.5%;
+    text-align: center;
   }
+}  
   
-  
-  .reason-feature__title {    
-    margin: 0;
-    margin-bottom: 15px;    
-    @include main;
-    text-align: left;
-    @media (min-width: $md) {
-      text-align: center;
-    }
+.reason-feature__txt {    
+  margin: 0;    
+  @include sub;
+  text-align: left;  
+  @media (min-width: $md) {
+    text-align: center;
   }
-  
-  
-  .reason-feature__txt {    
-    margin: 0;    
-    @include sub;
-    text-align: left;
-    line-height: 21px;
-    @media (min-width: $md) {
-      text-align: center;
-    }
-  }
-}
+}*/

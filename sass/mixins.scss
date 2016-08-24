@@ -1,18 +1,20 @@
 @import "variables.scss";
 
-@mixin main{
-  text-align: center;  
+@mixin main{    
   font-family: $font-family;
-  font-size: $font-size-main;
-  font-weight: 700;
-  text-transform: uppercase;
+  font-size: $fs-main;
   line-height: 26px;
+  font-weight: 700;
+  text-transform: uppercase;  
+  @media (min-width: $md) {
+    font-size: $fs-main-bd;
+  }
 }
 
-@mixin sub{
-  text-align: center;  
+@mixin sub{   
   font-family: $font-family;
-  font-size: $font-size-sub;
+  font-size: $fs-sub;
+  line-height: 21px;
   font-weight: 400;
   text-transform: uppercase;  
 }
