@@ -57,11 +57,11 @@
   margin: 0;
   text-align: left;  
     
-    &:first-child{
+    &:first-child {
       padding-top: 27px;
     }
   
-    &:last-child{
+    &:last-child {
       padding-bottom: 37px;
     }
   }
@@ -78,8 +78,7 @@
   background-color: $grey;
   @media (min-width: $md) {    
     padding-top: 30px;    
-  }
-  
+  }  
   
   &::after {
   content: "";
