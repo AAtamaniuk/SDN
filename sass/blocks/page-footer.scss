@@ -15,8 +15,7 @@
   @media (min-width: $md) {
     display: flex;
     flex-wrap: nowrap;
-    padding-bottom: 38px;
-    //justify-content: space-between;
+    padding-bottom: 38px;    
   }
 }
 
@@ -34,8 +33,7 @@
   }
   }
 
-.social {    
-  //width: 150px;
+.social {  
   text-align: center;
   margin: auto;
   margin-bottom: 45px;  
