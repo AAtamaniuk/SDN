@@ -4,26 +4,47 @@
 
 .page-footer {  
   z-index: 30;
-  display: block;  
+  position: absolute;
+  bottom: 0;  
+  display: block;
+  width: 100%;
   padding-top: 38px;
   padding-bottom: 18px;
   margin-top: -245px;
   background-color: hsla(360, 100%, 100%, 0.9);
+  @media (min-width: $md) {
+    display: flex;
+    flex-wrap: nowrap;
+    padding-bottom: 38px;
+    //justify-content: space-between;
+  }
 }
 
 .hash {
-  @include main;
-  text-align: center;
-  font-size: 21px;
   margin-bottom: 35px;
+  @include main;
+  text-align: center; 
+  font-size: 21px;  
+  @media (min-width: $md) {
+    width: 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 0;
+    padding-top: 14px;
+    padding-bottom: 14px;
+  }
   }
 
-.social {
-  display: block;  
-  width: 150px;
+.social {    
+  //width: 150px;
+  text-align: center;
   margin: auto;
   margin-bottom: 45px;  
   font-size: 0;
+  @media (min-width: $md) {
+    width: 33.33%;
+    max-width: 33.33%;
+    margin: 0;
+  }
   
   &__item {
     display: inline-block;
@@ -31,7 +52,8 @@
     width: 46px;
     height: 48px;
     margin-right: 6px;    
-    background-color: $blue;    
+    background-color: $blue;
+    
     &:last-child {
       margin-right: 0;
     }
@@ -40,5 +62,9 @@
 
 .copyright {
   @include sub;
-  text-align: center;  
+  text-align: center;
+  @media (min-width: $md) {
+    width: 33.33%;
+    max-width: 33.33%;
+  }
 }

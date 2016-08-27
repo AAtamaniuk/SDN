@@ -1,11 +1,6 @@
 @import "../variables.scss";
 @import "../mixins.scss";
 
-.reason-wrap{
-  //display: flex;
-  //flex-wrap: wrap;
-}
-
 .reason {
   padding-left: 10%;
   padding-right: 10%;
@@ -25,7 +20,10 @@
   
   &__num {
     margin-top: 10px;
-    @include sub;    
+    @include sub;
+    @media(min-width: $md) {
+      margin-bottom: 20px;
+    }
   }  
   
   &__about {       
@@ -63,6 +61,10 @@
     &:last-child{
       padding-bottom: 37px;
     }
+  }
+  
+  @media (min-width: $md) {    
+    min-height: 330px;    
   }
 }
 

@@ -14,8 +14,7 @@
   text-align: center;
   color: $white;    
   background-color: $brown;
-  @media (min-width: $md) {
-   font-size: 30px;
+  @media (min-width: $md) {   
   }
 }
 
@@ -78,7 +77,7 @@
 .form__submit-btn {
   display: block;
   width: 100%;
-  padding: 15px 6.25%;  
+  padding: 16px 6.25%;  
   background-color: $blue;  
   @include main;
   font-size: 21px;

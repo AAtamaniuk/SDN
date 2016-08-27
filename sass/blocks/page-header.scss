@@ -3,6 +3,9 @@
 
 .page-header {
   position: relative;
+  @media (min-width: $md) {
+    display: flex;
+  }
 }
 
 .main-nav__list {

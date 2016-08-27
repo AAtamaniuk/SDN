@@ -6,6 +6,12 @@
   padding-bottom: 25px;
   padding-left: 9%;
   padding-right: 9%;
+  max-width: 568px;
+  margin: auto;
+  @media (min-width: $md) {
+    padding-top: 55px;
+    padding-bottom: 45px;
+  }  
 
   &__ask {
   margin: 0;
@@ -13,6 +19,10 @@
   @include main;
   font-size: 21px;
   text-align: center;
+    @media (min-width: $md) {
+      font-size: 30px;
+      margin-bottom: 30px;
+    }  
   }
 
   &__invite {
