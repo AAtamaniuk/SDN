@@ -4,8 +4,15 @@
 .reason-img {
   height: 256px;  
   background-color: brown;
+  overflow: hidden;
   @media (min-width: $md) {    
-    min-width: 66.66%;
-    min-height: 256px;
-  }  
+    width: 66.66%;
+    height: 256px;
+  }
+    img {
+        display: block;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
   }
