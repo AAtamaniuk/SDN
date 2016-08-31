@@ -6,19 +6,29 @@
   "dependencies": {},
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.0",
-    "gulp-plumber": "^1.1.0",    
-    "gulp-sass": "^2.3.2"
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-copy": "0.0.2",
+    "gulp-csscomb": "^3.0.7",
+    "gulp-csso": "^2.0.0",
+    "gulp-imagemin": "^3.0.3",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-svgmin": "^1.2.2",
+    "gulp-svgstore": "^6.0.0",
+    "run-sequence": "^1.2.2"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "gulp serve",
+    "csscomb": "gulp csscomb",
+    "build": "gulp build"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AAtamaniuk/SDN.git"
   },
   "author": "Oleksandr Atamaniuk",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/AAtamaniuk/SDN/issues"
   },
