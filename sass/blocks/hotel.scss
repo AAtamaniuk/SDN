@@ -1,0 +1,19 @@
+@import "../variables.scss";
+@import "../mixins.scss";
+
+.hotel-wrap {
+  max-width: 568px;
+  margin: 0 auto;
+}
+
+.hotel__title {
+  display: block;
+  padding: 30px 6.25%;
+  margin: 0;    
+  @include main;
+  text-align: center;
+  text-decoration: none;
+  color: $white;    
+  background-color: $brown;  
+}
+
