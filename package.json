@@ -5,25 +5,20 @@
   "main": "gulpfile.js",
   "dependencies": {},
   "devDependencies": {
+    "autoprefixer": "^6.4.0",
     "browser-sync": "^2.14.3",
+    "css-mqpacker": "^5.0.1",
     "gulp": "^3.9.1",
-    "gulp-autoprefixer": "^3.1.1",
-    "gulp-copy": "0.0.2",
-    "gulp-csscomb": "^3.0.7",
     "gulp-csso": "^2.0.0",
     "gulp-imagemin": "^3.0.3",
     "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.1",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-svgmin": "^1.2.2",
-    "gulp-svgstore": "^6.0.0",
-    "run-sequence": "^1.2.2"
+    "gulp-svgstore": "^6.0.0"
   },
-  "scripts": {
-    "start": "gulp serve",
-    "csscomb": "gulp csscomb",
-    "build": "gulp build"
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/AAtamaniuk/SDN.git"
