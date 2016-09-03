@@ -5,7 +5,7 @@
 .intro {
   min-height: 390px;  
   background-color: brown;  
-  //background: url(../../img/photo-background@1x.jpg) 50% 50% no-repeat;
+  background: url("../../img/photo-background@1x.jpg") 50% 25% no-repeat;
   background-size: cover;
   padding-top: 48px;
   @media (min-width: $md) {
@@ -13,43 +13,44 @@
     padding-top: 76px;
   }  
   
-  &__welcome {
+  &__svg {
     display: block;    
-    height: 34px;
-    margin: auto;
+    margin: auto;     
+  }
+  
+  &__welcome {        
+    height: 34px;    
     margin-bottom: 10px;
+    fill: $blue;
     @media (min-width: $md) {
       height: 44px;
       margin-bottom: 12px;
-    }
+    }    
   }  
   
-  &__tothegorgeous {
-    display: block;    
-    height: 22px;
-    margin: auto;
+  &__tothegorgeous { 
+    height: 22px;    
     margin-bottom: 60px;
+    fill: $brown;
     @media (min-width: $md) {
       height: 30px;
       margin-bottom: 50px;
     }
   }  
   
-  &__sedona {
-    display: block;    
-    height: 48px;
-    margin: auto;
-    margin-bottom: 67px;    
+  &__sedona {       
+    height: 48px;   
+    margin-bottom: 67px;
+    fill: $white;
     @media (min-width: $md) {
       height: 78px;
       margin-bottom: 60px;      
     }
   }  
   
-  &__becausecanyon {
-    display: block;    
+  &__becausecanyon {       
     height: 54px;
-    margin: auto;
+    fill: $white;
     @media (min-width: $md) {
       height: 78px;
     }

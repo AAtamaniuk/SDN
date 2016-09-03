@@ -44,6 +44,13 @@
     margin: 0;
   }
   
+  &__svg {
+    height: 20px;
+    width: 20px;
+    margin-top: 14px;
+    fill: white;
+  }
+  
   &__item {
     display: inline-block;
     vertical-align: top;    

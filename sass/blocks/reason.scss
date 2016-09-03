@@ -29,7 +29,14 @@
   &__about {       
     margin-bottom: 0;
     @include sub;    
-  } 
+  }
+  
+  &__svg {
+    width: 75px;
+    height: 75px;
+    margin-top: 60px;
+    fill: $blue;
+  }
 }
 
 .reason--blue {
@@ -37,8 +44,7 @@
   padding-top: 30px;
   padding-bottom: 40px;
   color: $white;  
-  background-color: $blue;   
-  
+  background-color: $blue;  
   @media (min-width: $md) {    
     padding-left: 5%;
     padding-right: 5%;  

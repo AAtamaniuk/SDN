@@ -107,6 +107,6 @@ gulp.task("build", function(fn) {
 
 gulp.task('watcher', function () {
   gulp.start("style:dev")    
-  gulp.watch('./sass/**/*.scss', ['style']);
+  gulp.watch('./sass/**/*.scss', ['style:dev']);
 });
 

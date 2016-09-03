@@ -42,14 +42,20 @@
     </header>
     <!-- - - - - - - - - - - END MAIN-HEADER - - - - - - - - - - -->
 
-
     <div class="intro">
-      <img class="intro__welcome" src="img/icon/text-welcome.svg" alt="welcome">
-      <img class="intro__tothegorgeous" src="img/icon/text-tothegorgeous.svg" alt="to the gorgeous">
-      <img class="intro__sedona" src="img/icon/text-sedona.svg" alt="Sedona">
-      <img class="intro__becausecanyon" src="img/icon/text-becausecanyon.svg" alt="because the Grand Canyon sucks!">
+      <svg class="intro__svg  intro__welcome">
+        <use xlink:href="#text-welcome"/>
+      </svg>
+      <svg class="intro__svg  intro__tothegorgeous">
+        <use xlink:href="#text-tothegorgeous"/>
+      </svg>
+      <svg class="intro__svg  intro__sedona">
+        <use xlink:href="#text-sedona"/>
+      </svg>
+      <svg class="intro__svg  intro__becausecanyon">
+        <use xlink:href="#text-becausecanyon"/>
+      </svg>      
     </div>
-
 
     <section class="reasons">
       <header class="reason-header">
@@ -76,16 +82,25 @@
       <div class="row-wrap row-wrap--feature">
 
         <div class="reason  reason--feature">
+          <svg class="reason__svg">
+            <use xlink:href="#icon-house"/>
+          </svg>
           <h2 class="reason__title">Жилье</h2>
           <p class="reason__about">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
         </div>
 
         <div class="reason  reason--feature">
+          <svg class="reason__svg">
+            <use xlink:href="#icon-gift"/>
+          </svg>
           <h2 class="reason__title">Сувениры</h2>
           <p class="reason__about">Не только китайского, но и местного производства!</p>
         </div>
 
         <div class="reason  reason--feature">
+          <svg class="reason__svg">
+            <use xlink:href="#icon-burger"/>
+          </svg>
           <h2 class="reason__title">Еда</h2>
           <p class="reason__about">Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</p>
         </div>
@@ -157,9 +172,21 @@
     <footer class="page-footer">
       <div class="hash">#visitsedona</div>
       <div class="social">
-        <a href="https://twitter.com" class="social__item  social__item--tw"></a>
-        <a href="https://facebook.com" class="social__item  social__item--fb"></a>
-        <a href="https://youtube.com" class="social__item  social__item--you"></a>
+        <a href="https://twitter.com" class="social__item  social__item--tw">
+          <svg class="social__svg">
+            <use xlink:href="#icon-twitter"/>
+          </svg>
+        </a>
+        <a href="https://facebook.com" class="social__item  social__item--fb">
+          <svg class="social__svg">
+            <use xlink:href="#icon-facebook"/>
+          </svg>
+        </a>
+        <a href="https://youtube.com" class="social__item  social__item--you">
+          <svg class="social__svg">
+            <use xlink:href="#icon-youtube"/>
+          </svg>
+        </a>
       </div>
       <div class="copyright">
         <p>Website by
