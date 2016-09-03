@@ -36,8 +36,19 @@ gulp.task("style", function() {
   .pipe(gulp.dest("build/css"))
   .pipe(minify())
   .pipe(rename("style.min.css"))
-  .pipe(gulp.dest("build/css"))
-  .pipe(server.reload({stream: true}));
+  .pipe(gulp.dest("build/css"));
+  //.pipe(server.reload({stream: true}));
+});
+
+gulp.task("style:dev", function() {
+  gulp.src("sass/style.scss")
+  .pipe(plumber())
+  .pipe(sass())
+  .pipe(postcss([
+    autoprefixer({browsers: browsers})    
+  ]))  
+  .pipe(gulp.dest("css"));  
+  //.pipe(server.reload({stream: true}));
 });
 
 gulp.task("symbols", function() {
@@ -59,14 +70,14 @@ gulp.task("images", function() {
   .pipe(gulp.dest("build/img"));
 });
 
-gulp.task("serve", function(){
-  server.init ({
-    server: "build"
-  });  
-  gulp.watch("sass/**/*.scss", ["style"]);
-  gulp.watch(".html")
-    .on("change", server.reload);  
-});
+//gulp.task("serve", function(){
+//  server.init ({
+//    server: "build"
+//  });  
+//  gulp.watch("sass/**/*.scss", ["style"]);
+//  gulp.watch(".html")
+//  .on("change", server.reload);  
+//});
 
 gulp.task("copy", function(){
   return gulp.src([
@@ -94,8 +105,8 @@ gulp.task("build", function(fn) {
      );  
 });
 
-//gulp.task('watcher', function () {
-//  gulp.start("style")    
-//  gulp.watch('./sass/**/*.scss', ['style']);
-//});
+gulp.task('watcher', function () {
+  gulp.start("style:dev")    
+  gulp.watch('./sass/**/*.scss', ['style']);
+});
 
