@@ -411,6 +411,11 @@ body {
   background-color: #80b2d1;
   border-top: 1px solid rgba(255, 255, 255, 0.2);
   border-bottom: 1px solid rgba(1, 1, 1, 0.2); }
+  .main-nav__item:hover {
+    background-color: #679ec1; }
+  .main-nav__item:active {
+    background-color: #5697bd;
+    color: rgba(255, 255, 255, 0.3); }
   .main-nav__item:first-child {
     border-top: #80b2d1; }
   .main-nav__item:last-child {
@@ -621,11 +626,16 @@ body {
   text-decoration: none;
   color: white;
   background-color: #756257; }
+  .hotel__title:hover {
+    background-color: #604e43; }
+  .hotel__title:active {
+    background-color: #513f34;
+    color: rgba(255, 255, 255, 0.3); }
 
 .map {
   z-index: 0;
   width: 100%;
-  height: 595px;
+  height: 593px;
   background: url(../img/map.jpg) 50% 50% no-repeat; }
 
 .page-footer {
@@ -712,6 +722,12 @@ body {
     background-color: inherit;
     border-top: none;
     border-bottom: none; }
+  .main-nav__item:hover {
+    background-color: inherit;
+    color: #80b2d1; }
+  .main-nav__item:active {
+    background-color: inherit;
+    color: rgba(0, 0, 0, 0.3); }
   .main-nav__item:first-child {
     border-top: none;
     -ms-flex-order: 1;
@@ -753,7 +769,7 @@ body {
     margin-bottom: 29px;
     font-size: 21px; }
   .reason {
-    max-width: 33.33%;
+    max-width: 33.3333333333%;
     min-height: 256px;
     padding-left: 6.5%;
     padding-right: 6.5%; }
@@ -771,7 +787,7 @@ body {
   .reason--grey::after {
     display: none; }
   .reason-img {
-    width: 66.66%; }
+    width: 66.6666666667%; }
   .visit {
     padding-top: 55px;
     padding-bottom: 45px; }
