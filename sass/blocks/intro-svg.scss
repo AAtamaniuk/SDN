@@ -3,14 +3,16 @@
 
 
 .intro {
-  min-height: 390px;  
+  min-height: 390px;
+  padding-top: 48px;
+  margin-top: 56px;
   background-color: brown;  
   background: url("../../img/photo-background@1x.jpg") 50% 25% no-repeat;
-  background-size: cover;
-  padding-top: 48px;
+  background-size: cover;  
   @media (min-width: $md) {
     min-height: 512px;
     padding-top: 76px;
+    margin-top: 0;
   }  
   
   &__svg {

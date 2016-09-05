@@ -18,19 +18,7 @@
   @media (min-width: $md) {    
     display: flex;        
     align-items: center;    
-  } 
-  
-  &::after {
-    content: "";
-    display: block;  
-    width: 138px;
-    height: 70px;    
-    margin: auto;
-    margin-bottom: -14px;
-    z-index: 30;    
-    background: url("../../img/logo-sedona@1x.png") 35.5px 0 no-repeat, 
-                url("../img/svg/form-logo-triangle.svg") no-repeat;        
-  }
+  }  
 }  
 
 .main-nav__item {  
@@ -63,7 +51,8 @@
   
   &:nth-child(3) {       
     @media (min-width: $md) {    
-      border-top: none;    
+      border-top: none;
+      margin-right: 20%;
     }
   }  
   
@@ -110,6 +99,22 @@
     display: none;  
   }  
   
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  width: 138px;
+  margin-left: -69px;
+  
+  &__link {
+    display: block;  
+    width: 138px;
+    height: 70px;
+    padding-left: 35.5px;
+    padding-right: 35.5px;
+    background-image: url("/img/icons/form-logo-triangle.svg");
+  }
 }
 /*.main-nav__logo {  
   display: block;  
