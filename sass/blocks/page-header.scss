@@ -34,14 +34,33 @@
   display: block;
   background-color: $blue;
   border-top: 1px solid rgba(255,255,255,0.2);
-  border-bottom: 1px solid rgba(1,1,1,0.2);  
+  border-bottom: 1px solid rgba(1,1,1,0.2);
+  
+  &:hover {
+    background-color: $blue-hover;
+  }
+    
+  &:active {
+    background-color: $blue-active;
+    color: $white-active;
+  }
   
   @media (min-width: $md) {
     display: block;
     width: 20%;
     background-color: inherit;
     border-top: none;
-    border-bottom: none;    
+    border-bottom: none;
+    
+    &:hover {
+      background-color: inherit;
+      color: $blue;
+    }
+    
+    &:active {
+      background-color: inherit;
+      color: $black-active;
+    }
   }
   
   &:first-child {
@@ -87,7 +106,7 @@
     @include main;
     text-align: center;
     color: $white;
-    text-decoration: none;
+    text-decoration: none;      
     
     @media screen and (min-width: $md) {
     color: inherit;

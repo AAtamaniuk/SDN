@@ -14,6 +14,15 @@
   text-align: center;
   text-decoration: none;
   color: $white;    
-  background-color: $brown;  
+  background-color: $brown;
+  
+  &:hover{
+    background-color: $brown-hover;
+  }
+  
+  &:active{
+    background-color: $brown-active;
+    color: $white-active;
+  }
 }
 

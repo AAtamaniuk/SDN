@@ -1,11 +1,22 @@
 ////////////////// COLORS //////////////////
 
 $brown: hsla(23, 15%, 40%, 1);//#766357;
+$brown-hover: hsl(23, 18%, 32%);
+$brown-active: hsl(23, 22%, 26%);
+
 $blue: hsla(203, 47%, 66%, 1);//#81b3d2;
+$blue-hover: hsl(203, 42%, 58%);
+$blue-active: hsl(202, 44%, 54%);
+
 $white: hsla(0, 100%, 100%, 1);//#fff;
+$white-active: hsla(0, 100%, 100%, .3);
+
 $grey: hsla(0, 0%, 93%, 1);//#eee;
 $grey-2: hsla(0, 0%, 95%, 1);//#f2f2f2;
+
 $black: hsla(0, 0%, 0%, 1);//#000;
+$black-active: hsla(0, 0%, 0%, .3);
+
 
 //////////////// TYPOGRAPHY ////////////////
 
