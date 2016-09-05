@@ -3,12 +3,21 @@
 
 .page-header {
   position: relative;
+  padding-bottom: 56px;
   @media (min-width: $md) {
     display: flex;
+    padding-bottom: 0;
   }
 }
 .main-nav {
-  width: 100%;
+  display: block;
+  width: 100%;  
+}
+
+.main-nav--closed {
+  @media (max-width: $md) {
+    display: none;
+  }  
 }
 
 .main-nav__list {
@@ -85,20 +94,24 @@
     font-size: 14px;
     }
 }
-.toggle {
+.menu-toggle {
   position: absolute;
   top: 17px;
   right: 20px;  
   display: block;  
   width: 23px;
-  height: 22px;  
-  background-image: url("../img/svg/icon-cross.svg");
-  background-repeat: no-repeat;
+  height: 22px;
+  background-image: url("../img/icons/icon-cross.svg");
+  background-repeat: no-repeat; 
   
   @media screen and (min-width: $md) {
     display: none;  
   }  
   
+}
+
+.menu-toggle--closed {  
+  background-image: url("../img/icons/icon-menu.svg");
 }
 
 .logo {
@@ -113,29 +126,10 @@
     height: 70px;
     padding-left: 35.5px;
     padding-right: 35.5px;
-    background-image: url("/img/icons/form-logo-triangle.svg");
+    background-image: url("../img/icons/form-logo-triangle.svg");
   }
 }
-/*.main-nav__logo {  
-  display: block;  
-  width: 138px;
-  height: 70px;
-  margin: auto;
-  margin-bottom: -14px;
-  z-index: 10;    
-  background-image: url("../img/form-logo-triangle.svg");
-  background-image: url("../../img/logo-sedona@1x.png");
-  background-repeat: no-repeat;
-  @media screen and (min-width: $md) {
-    //position: absolute;
-  }
-  
-  img {
-    display: block;
-    width: 67px;
-    margin: auto;
-  }
-}*/
+
 
 
 

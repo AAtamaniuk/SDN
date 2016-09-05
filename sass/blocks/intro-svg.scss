@@ -4,10 +4,9 @@
 
 .intro {
   min-height: 390px;
-  padding-top: 48px;
-  margin-top: 56px;
+  padding-top: 48px;  
   background-color: brown;  
-  background: url("../../img/photo-background@1x.jpg") 50% 25% no-repeat;
+  background: url("../img/photo-background@1x.jpg") 50% 25% no-repeat;
   background-size: cover;  
   @media (min-width: $md) {
     min-height: 512px;
@@ -16,7 +15,8 @@
   }  
   
   &__svg {
-    display: block;    
+    display: block;
+    height: 100%;
     margin: auto;     
   }
   
@@ -46,8 +46,9 @@
     fill: $white;
     @media (min-width: $md) {
       height: 78px;
+      width: 458px;
       margin-bottom: 60px;      
-    }
+    }    
   }  
   
   &__becausecanyon {       
