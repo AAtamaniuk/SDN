@@ -3,7 +3,7 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
-var server = require("browser-sync");
+// var server = require("browser-sync");
 var mqpacker = require("css-mqpacker");
 var minify = require("gulp-csso");
 var rename = require("gulp-rename");
@@ -12,6 +12,7 @@ var svgstore = require("gulp-svgstore");
 var svgmin = require("gulp-svgmin");
 var run = require("run-sequence");
 var del = require("del");
+var ghPages = require('gulp-gh-pages');
 
 var browsers = [
     "last 1 version",
@@ -20,7 +21,7 @@ var browsers = [
     "last 2 Opera versions",
     "last 2 Edge versions",
     "ie 11",
-    "ie 10"    
+    "ie 10"
 ];
 
 gulp.task("style", function() {
@@ -32,7 +33,7 @@ gulp.task("style", function() {
     mqpacker({
       sort: true
     })
-  ]))  
+  ]))
   .pipe(gulp.dest("build/css"))
   .pipe(minify())
   .pipe(rename("style.min.css"))
@@ -45,9 +46,12 @@ gulp.task("style:dev", function() {
   .pipe(plumber())
   .pipe(sass())
   .pipe(postcss([
-    autoprefixer({browsers: browsers})    
-  ]))  
-  .pipe(gulp.dest("css"));  
+    autoprefixer({browsers: browsers})
+  ]))
+  .pipe(gulp.dest("css"))
+  .pipe(minify())
+  .pipe(rename("style.min.css"))
+  .pipe(gulp.dest("css"));
   //.pipe(server.reload({stream: true}));
 });
 
@@ -56,10 +60,10 @@ gulp.task("symbols", function() {
   .pipe(svgmin())
   .pipe(svgstore({
     inlineSvg: true
-  }))  
+  }))
   .pipe(rename("symbols.svg"))
   .pipe(gulp.dest("build/img"));
-})
+});
 
 gulp.task("images", function() {
   return gulp.src("build/img/**/*.{png,jpg,gif}")
@@ -73,10 +77,10 @@ gulp.task("images", function() {
 //gulp.task("serve", function(){
 //  server.init ({
 //    server: "build"
-//  });  
+//  });
 //  gulp.watch("sass/**/*.scss", ["style"]);
 //  gulp.watch(".html")
-//  .on("change", server.reload);  
+//  .on("change", server.reload);
 //});
 
 gulp.task("copy", function(){
@@ -96,22 +100,20 @@ gulp.task("clean", function(){
 });
 
 gulp.task("build", function(fn) {
-  run("clean", 
-      "copy", 
-      "style", 
-      "images", 
-      "symbols", 
+  run("clean",
+      "copy",
+      "style",
+      "images",
+      "symbols",
       fn
-     );  
+     );
 });
 
 gulp.task('watcher', function () {
-  gulp.start("style:dev")    
+  gulp.start("style:dev");
   gulp.watch('./sass/**/*.scss', ['style:dev']);
 });
 
-var ghPages = require('gulp-gh-pages');
- 
 gulp.task('deploy', function() {
   return gulp.src('./build/**/*')
     .pipe(ghPages());
