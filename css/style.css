@@ -691,6 +691,8 @@ body {
     display: inline-block;
     max-height: 30px; }
   .copyright__svg {
+    position: relative;
+    top: 10px;
     max-width: 27px;
     max-height: 30px;
     margin-right: 12px;
